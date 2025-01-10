@@ -195,11 +195,11 @@ a {
 	transition: all 0.1s ease;
 }
 
-/*home section*/
+/*home section
 section {
 	min-height: 100vh;
 	padding: 5rem 9% 2rem;
-}
+}*/
 
 .home {
 	display: flex;
@@ -555,6 +555,7 @@ span {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 	flex-direction: column;
 	display: flex;
+	padding-top: 79px;
 
 }
 
