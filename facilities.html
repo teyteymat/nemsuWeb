@@ -169,6 +169,72 @@
        background-color: rgb(0, 0, 255);
      }
 
+    @media (max-width: 1024px) {
+  /* For medium screens (tablets, laptops in portrait mode) */
+  .carousel, .carousel1 {
+    width: 90%;
+    max-width: 700px;
+  }
+
+  .carousel-item img, .carousel-item1 img {
+    border-radius: 8px;
+  }
+
+  .carousel-control, .carousel-control1 {
+    font-size: 18px;
+    padding: 8px 16px;
+  }
+
+  .indicator, .indicator1 {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* For tablets and smaller screens */
+  .carousel, .carousel1 {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .carousel-item img, .carousel-item1 img {
+    border-radius: 6px;
+  }
+
+  .carousel-control, .carousel-control1 {
+    font-size: 16px;
+    padding: 6px 12px;
+  }
+
+  .indicator, .indicator1 {
+    width: 6px;
+    height: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* For mobile screens */
+  .carousel, .carousel1 {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .carousel-item img, .carousel-item1 img {
+    border-radius: 4px;
+  }
+
+  .carousel-control, .carousel-control1 {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+
+  .indicator, .indicator1 {
+    width: 5px;
+    height: 5px;
+  }
+}
+
  </style>
 </head>
 
