@@ -66,7 +66,7 @@ a {
 	padding: 12px 0;
 	font-size: 16px;
 	color: #ffffff;
-	text-transform: capitalize;
+	
 	font-weight: 600;
 	transition: all 0.2s ease;
 }
@@ -136,7 +136,7 @@ a {
 	font-weight: 600;
 	color: #02066f;
 	transition: all 0.2s ease;
-	text-transform: capitalize;
+
 }
 .header .open-nav-menu {
 	height: 34px;
@@ -1009,46 +1009,6 @@ span {
 
 
 /*---------------------------------------- University Seal Section -------------------------------------------------------*/
-.history-content{
-	text-align: center;
-}
-.history-content h1{
-	font-size: 100px;
-	color: #ffffff;
-	font-weight: 600;
-	justify-content: center;
-    align-items: center;
-	text-align: center;
-	display: flex;
-	height: 50vh;
-}
-
-.history-content h1:hover{
-	-webkit-text-stroke: 2px #ffffff;
-	color: transparent;
-}
-
-
-.back-video{
-	position: absolute;
-	right: 0;
-	bottom: 0;
-	z-index: -1;
-}
-
-@media (min-aspect-ratio: 16/9){
-	.back-video{
-		width: 100%;
-		height: auto;
-	}
-}
-@media (max-aspect-ratio: 16/9){
-	.back-video{
-		width: auto;
-		height: 100%;
-	}
-}
-
 
 /* University Seal Section */
 .university-seal {
@@ -1062,145 +1022,136 @@ span {
 
 /* Container for the Seal content */
 .university-seal .seal-container {
-    max-width: 1200px;
+    max-width: 900px;
     margin: 0 auto;
     padding: 0 15px;
 }
 
 /* Heading for University Seal */
 .university-seal h2 {
-    font-size: 1.8rem;
+    font-size: 2.8rem;
     font-weight: bold;
     color: #003366; /* Dark blue */
-    margin-bottom: 5px;
-    margin-top: 70px;
+    margin-bottom: 40px;
     text-transform: uppercase;
 }
 
 /* SDSSU Logo Section */
 .logo-section {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .nemsu-logo {
     width: 150px; /* Adjust the size as per your logo's dimension */
     height: auto;
-    margin-bottom: 0;
+    margin-bottom: 15px;
 }
 
 .seal-description {
-    text-align: justify;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     color: #444;
-    line-height: 1.3;
+    line-height: 1.7;
     font-weight: 300;
-    margin-top: 5px;
+    margin-top: 15px;
 }
 
 /* Ring Section */
 .ring-section {
-    margin-bottom: 10px;
-    text-align: justify;
+    margin-bottom: 40px;
+    text-align: left;
 }
 
 .ring-section h3 {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     color: #003366; /* Dark blue for headings */
-    font-weight: 500;
-    margin-bottom: 0px;
+    font-weight: 600;
+    margin-bottom: 10px;
 }
 
 .ring-section p {
-    text-align: justify;
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: #444;
-    line-height: 1.3;
+    line-height: 1.7;
     font-weight: 300;
 }
 
 /* Shield Section */
 .shield-section {
-    margin-bottom: 10px;
-    text-align: justify;
+    margin-bottom: 40px;
+    text-align: left;
 }
 
 .shield-section h3 {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     color: #003366;
-    font-weight: 500;
-    margin-bottom: 0px;
+    font-weight: 600;
+    margin-bottom: 10px;
 }
 
 .shield-section p {
-    text-align: justify;
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: #444;
-    line-height: 1.3;
+    line-height: 1.7;
     font-weight: 300;
 }
 
 /* Color Section */
 .color-section {
-    margin-bottom: 10px;
+    margin-bottom: 40px;
     text-align: left;
 }
 
 .color-section h3 {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     color: #003366;
-    font-weight: 500;
-    margin-bottom: 0px;
+    font-weight: 600;
+    margin-bottom: 10px;
 }
 
 .color-section p {
-    text-align: justify;
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: #444;
-    line-height: 1.3;
+    line-height: 1.7;
     font-weight: 300;
 }
 
 /* Open Book Section */
 .open-book-section {
-    margin-bottom: 10px;
-    text-align: justify;
+    margin-bottom: 40px;
+    text-align: left;
 }
 
 .open-book-section h3 {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     color: #003366;
-    font-weight: 500;
-    margin-bottom: 0px;
-    margin: 0;
+    font-weight: 600;
+    margin-bottom: 10px;
 }
 
 .open-book-section p {
-    text-align: justify;
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: #444;
-    line-height: 1.3;
+    line-height: 1.7;
     font-weight: 300;
 }
 
 /* Torch and Laurel Section */
 .torch-laurel-section {
-    margin-bottom: 10px;
+    margin-bottom: 40px;
     text-align: left;
 }
 
 .torch-laurel-section h3 {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     color: #003366;
-    font-weight: 500;
-    margin-bottom: 0px;
-    margin-top: 0;
+    font-weight: 600;
+    margin-bottom: 10px;
 }
 
 .torch-laurel-section p {
-    text-align: justify;
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: #444;
-    line-height: 1.3;
+    line-height: 1.7;
     font-weight: 300;
 }
 
@@ -1216,5 +1167,100 @@ span {
 
     .nemsu-logo {
         width: 120px; /* Adjust logo size for smaller screens */
+    }
+}
+
+
+/*---------------------------------------- University HYmm -------------------------------------------------------*/
+
+
+
+/* University Hymn Section */
+.university-hymn {
+    background-color: #f5f8ff; /* Light background */
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    min-height: 100vh; /* Ensure full page height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Title for the hymn */
+.university-hymn h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #003366; /* Dark blue */
+    margin-bottom: 20px;
+    margin-top: 70px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%; /* Make sure title spans the full width */
+}
+
+/* Container for the hymn content */
+.university-hymn .hymn-container {
+    max-width: 1200px; /* Container width */
+    display: flex;
+    justify-content: space-between; /* Position video and lyrics on either side */
+    align-items: flex-start;
+    gap: 30px; /* Space between video and lyrics */
+    flex-wrap: wrap; /* Allow content to wrap on small screens */
+    width: 100%; /* Ensure the content takes up full available width */
+}
+
+/* YouTube Video Section */
+.video-section1 {
+    flex: 1; /* Make video take equal width */
+    max-width: 600px; /* Limit video width */
+    height: 315px; /* Fixed height for the video */
+    margin-bottom: 40px; /* Spacing between video and lyrics */
+    overflow: hidden;
+}
+
+.video-section1 iframe {
+    width: 100%;
+    height: 100%; /* Ensure the video takes full height of the container */
+    border: none;
+}
+
+/* Lyrics Section */
+.lyrics-section {
+    flex: 1; /* Make lyrics section take equal width */
+    max-width: 600px; /* Limit width */
+    text-align: left;
+    margin-bottom: 20px;
+    padding-right: 10px; /* For better scrollbar appearance */
+    height: 315px; /* Fixed height for the lyrics container */
+    overflow-y: scroll; /* Allow scrolling for lyrics */
+    padding-left: 20px; /* Add padding for better alignment */
+}
+
+/* Make the whole screen scrollable */
+
+
+.university-hymn {
+    min-height: 100vh; /* Ensure the section takes full viewport height */
+}
+
+/* Responsiveness for smaller screens */
+@media (max-width: 768px) {
+    .university-hymn h2 {
+        font-size: 2.2rem;
+    }
+
+    .video-section1 iframe {
+        height: 250px; /* Adjust video size for smaller screens */
+    }
+
+    .university-hymn .hymn-container {
+        flex-direction: column; /* Stack video and lyrics on top of each other */
+        align-items: center; /* Center items when stacked */
+    }
+
+    .lyrics-section {
+        max-width: 100%; /* Ensure lyrics take full width on small screens */
+        height: auto; /* Adjust height to allow for more lyrics */
     }
 }
