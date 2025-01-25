@@ -66,7 +66,7 @@ a {
 	padding: 12px 0;
 	font-size: 16px;
 	color: #ffffff;
-	text-transform: capitalize;
+
 	font-weight: 600;
 	transition: all 0.2s ease;
 }
@@ -136,7 +136,7 @@ a {
 	font-weight: 600;
 	color: #02066f;
 	transition: all 0.2s ease;
-	text-transform: capitalize;
+	
 }
 .header .open-nav-menu {
 	height: 34px;
