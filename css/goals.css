@@ -419,85 +419,6 @@ span {
 	box-shadow: 0 3rem 3rem rgba(0,0,0,0.3);
 }
 
-/*-----------------------------NEMSU LIANGA-----------------------------------*/
-#nemsulianga {
-    background-image: url('../img/Nemsulcbg.jpg'); /* Specify the image path */
-    background-size: cover; /* Ensures the image covers the whole section */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    height: 100vh; /* Full viewport height */
-    width: 100%;
-    display: flex;
-    align-items: center; /* Vertically center the content */
-    justify-content: center; /* Horizontally center the content */
-    text-align: center;
-    padding: 20px; /* Ensure padding on smaller screens */
-    box-sizing: border-box;
-}
-
-/* Styles for the section content */
-#nemsulianga-content {
-    max-width: 1200px; /* Set a maximum width */
-    margin: 0 auto;
-    padding: 20px;
-    color: #ffffff;
-}
-
-.university-name {
-    font-size: 3rem;
-    font-weight: 700;
-    font-family: Georgia, serif;
-    color: #ffffff;
-    margin-bottom: 20px;
-    line-height: 1.2;
-}
-
-/* Description text with background and outline effect */
-.description-text {
-    font-size: 1.2rem;
-    line-height: 1.5;
-    color: #ffffff;
-    margin-top: 20px;
-    padding: 20px;
-    max-width: 100%; 
-    margin-left: auto;
-    margin-right: auto;
-    background-color: rgba(0, 0, 0, 0.6); 
-    border-radius: 10px; 
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); 
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; 
-}
-
-.description-text strong {
-    color: #ffffff;
-}
-
-/* Adjustments for tablet screens */
-@media (max-width: 768px) {
-    .university-name {
-        font-size: 2.5rem;
-    }
-
-    .description-text {
-        font-size: 1rem;
-        line-height: 1.4;
-        padding: 15px;
-    }
-}
-
-/* Adjustments for mobile screens */
-@media (max-width: 480px) {
-    .university-name {
-        font-size: 2rem;
-    }
-
-    .description-text {
-        font-size: 0.9rem;
-        padding: 10px;
-    }
-}
-
-
 
  
 /*-------------------------footer---------------------------------- */
@@ -610,437 +531,94 @@ span {
     font-size: 1.4rem;
 	margin-bottom: 0.7rem;
 }
-
-.history-content{
+/*------------------------------HISTORY CONTENT-----------------------------------*/
+.history-container {
+	max-width: 1200px;
+	margin: 20px auto;
+	padding: 20px;
+	background: white;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+  }
+  
+  .history-container h1 {
 	text-align: center;
-}
-.history-content h1{
-	font-size: 100px;
-	color: #ffffff;
-	font-weight: 600;
-	justify-content: center;
-    align-items: center;
-	text-align: center;
+	margin-bottom: 20px;
+	padding-top: 50px;
+	color: #003366;
+  }
+  
+  .history-content {
 	display: flex;
-	height: 50vh;
-}
-
-.history-content h1:hover{
-	-webkit-text-stroke: 2px #ffffff;
-	color: transparent;
-}
-
-
-.back-video{
-	position: absolute;
-	right: 0;
-	bottom: 0;
-	z-index: -1;
-}
-
-@media (min-aspect-ratio: 16/9){
-	.back-video{
-		width: 100%;
-		height: auto;
+	gap: 20px;
+	align-items: flex-start; /* Aligns items properly */
+  }
+  
+  .history-image, .history-video {
+	width: 400px; /* Ensure consistent width */
+	height: auto; /* Maintain aspect ratio */
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .history-text {
+	flex: 1;
+	display: flex;
+	flex-direction: column; /* Stack paragraphs vertically */
+  }
+  
+  .history-text p {
+	margin-bottom: 15px;
+	text-align: justify;
+	flex: 1; /* Allows paragraphs to expand dynamically */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+	.history-content {
+	  flex-direction: column;
+	  align-items: center;
 	}
-}
-@media (max-aspect-ratio: 16/9){
-	.back-video{
-		width: auto;
-		height: 100%;
+  
+	.history-image, .history-video {
+	  max-width: 100%; /* Make media responsive */
 	}
-}
-
-/**********************************************MANDATE****************************************************/
-
-/* General styling for mandate section with background image */
-.mandate-content {
-    padding: 50px 20px;
-    background-image: url('../img/historybg.png'); /* Replace with your image path */
-    background-size: cover; /* Ensures the image covers the entire section */
-    background-position: center; /* Centers the image */
-    text-align: center;
-    font-family: 'Arial', sans-serif;
-    color: #ffffff; /* White text to contrast with the background */
-}
-
-/* Container to center content */
-.mandate-container {
-    max-width: 800px;
-    margin: 0 auto;
-    background: rgba(218, 217, 217, 0.8); /* Slightly transparent white background */
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-}
-
-/* Heading styling */
-.mandate-container h1 {
-    font-size: 32px;
-    color: #004080; /* Dark blue */
-    margin-bottom: 40px;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-/* Paragraph styling */
-.mandate-container p {
-    font-size: 18px;
-    line-height: 2.0;
-    color: #000000; /* Dark gray for readability */
-    text-align: justify;
-}
-
-/* Emphasizing strong elements */
-.mandate-container strong {
-    color: #0066cc; /* Highlighted text in blue */
-}
-
-/*---------------------------------------- Vision and Mission Section -------------------------------------------------------*/
-
-/* Vision and Mission Section */
-.vision-mission {
-    background-color: #f5f8ff; /* Light blue background */
-    padding: 80px 20px;
-    text-align: center;
-    max-height: 600px; /* Maximum height for the scrollable section */
-    overflow-y: auto; /* Enable vertical scrolling if content exceeds max-height */
-}
-
-.vision-mission .vm-container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-
-.vision-mission h2 {
-    font-size: 2.8rem;
-    font-weight: bold;
-    color: #003366; /* Dark blue */
-    margin-bottom: 40px;
-    text-transform: uppercase;
-}
-
-.vision-mission .vision, .vision-mission .mission {
-    background-color: #ffffff; /* White background for the vision and mission divs */
-    padding: 40px;
-    margin: 20px 0;
-    border-radius: 10px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-}
-
-.vision-mission h3 {
-    font-size: 2rem;
-    color: #003366; /* Dark blue for the headings */
-    margin-bottom: 20px;
-    font-weight: 600;
-}
-
-.vision-mission p {
-    font-size: 1.1rem;
-    color: #000000; /* Dark gray for the text */
-    line-height: 1.7;
-    font-weight: 300;
-}
-
-.vision-mission .vision:hover, .vision-mission .mission:hover {
-    background-color: #f0f8ff; /* Light blue background on hover */
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
-}
-
-@media (max-width: 768px) {
-    .vision-mission h2 {
-        font-size: 2.2rem; /* Smaller font size on mobile */
-    }
-
-    .vision-mission .vision, .vision-mission .mission {
-        padding: 30px; /* Less padding on smaller screens */
-    }
-
-    .vision-mission p {
-        font-size: 1rem;
-    }
-}
-
-/*---------------------------------------- Core Values Section -------------------------------------------------------*/
-
-
-/* Core Values Section */
-.core-values {
-    background-color: #f5f8ff; /* Light blue background */
-    padding: 20px;
-    text-align: center;
-    max-height: 80vh; /* Limit height to 80% of the viewport height */
-    overflow-y: auto; /* Scrollable content */
-    margin: 0 auto;
-    width: 100%;
-}
-
-.core-values .cv-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-
-.core-values h2 {
-    font-size: 2.8rem;
-    font-weight: bold;
-    color: #003366; /* Dark blue */
-    margin-bottom: 40px;
-    text-transform: uppercase;
-}
-
-.core-values .core-value {
-    background-color: #ffffff; /* White background for core value blocks */
-    padding: 30px;
-    margin: 20px 0;
-    border-radius: 10px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    text-align: left;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for scale and shadow */
-}
-
-/* Hover Effect */
-.core-values .core-value:hover {
-    transform: scale(1.05); /* Slightly increase the size */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
-    cursor: pointer; /* Change cursor to pointer */
-}
-
-/* Active (Click) Effect */
-.core-values .core-value:active {
-    transform: scale(1.02); /* Slightly shrink on click */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Lighter shadow on click */
-}
-
-/* NEMSU CARES Section */
-.core-values .care-text {
-    background-color: #ffffff;
-    padding: 40px;
-    margin-top: 40px;
-    border-radius: 10px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
-}
-
-/* Hover Effect for NEMSU CARES */
-.core-values .care-text:hover {
-    transform: scale(1.05); /* Slightly increase size */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
-    cursor: pointer; /* Change cursor to pointer */
-}
-
-/* Active Effect for NEMSU CARES */
-.core-values .care-text:active {
-    transform: scale(1.02); /* Slightly shrink on click */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Lighter shadow on click */
-}
-
-/* Heading for each core value */
-.core-values h3 {
-    font-size: 1.8rem;
-    color: #003366; /* Dark blue for headings */
-    margin-bottom: 15px;
-    font-weight: 600;
-}
-
-/* Paragraph for core value descriptions */
-.core-values p {
-    font-size: 1.1rem;
-    color: #444; /* Dark gray for text */
-    line-height: 1.7;
-    font-weight: 300;
-}
-
-/* Heading for NEMSU CARES Text */
-.core-values .care-text h3 {
-    font-size: 2rem;
-    color: #003366;
-    margin-bottom: 20px;
-}
-
-/* Paragraph for NEMSU CARES Text */
-.core-values .care-text p {
-    font-size: 1.1rem;
-    color: #444;
-    line-height: 1.7;
-    font-weight: 300;
-}
-
-/* Ensure scrolling ends at the last part */
-.core-values {
+  }
+  
+  .image-gallery {
+    width: 40%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    gap: 10px;
+    padding: 10px;
 }
 
-/* Proper spacing at the bottom for care-text */
-.core-values .care-text {
-    margin-bottom: 80px; /* Ensures there's space at the bottom of the last section */
-}
-
-/* Responsiveness for smaller screens */
-@media (max-width: 768px) {
-    .core-values h2 {
-        font-size: 2.2rem;
-    }
-
-    .core-values .core-value {
-        padding: 20px;
-    }
-
-    .core-values p {
-        font-size: 1rem;
-    }
-}
-
-
-/*---------------------------------------- Goals Section -------------------------------------------------------*/
-
-.history-content{
-	text-align: center;
-}
-.history-content h1{
-	font-size: 100px;
-	color: #ffffff;
-	font-weight: 600;
-	justify-content: center;
-    align-items: center;
-	text-align: center;
-	display: flex;
-	height: 50vh;
-}
-
-.history-content h1:hover{
-	-webkit-text-stroke: 2px #ffffff;
-	color: transparent;
-}
-
-
-.back-video{
-	position: absolute;
-	right: 0;
-	bottom: 0;
-	z-index: -1;
-}
-
-@media (min-aspect-ratio: 16/9){
-	.back-video{
-		width: 100%;
-		height: auto;
-	}
-}
-@media (max-aspect-ratio: 16/9){
-	.back-video{
-		width: auto;
-		height: 100%;
-	}
-}
-
-
-/* Goals Section */
-.goals {
-    background-color: #f5f8ff; /* Light blue background */
-    padding: 20px;
-    text-align: center;
-    max-height: 80vh; /* Limit height to 80% of the viewport height */
-    overflow-y: auto; /* Scrollable content */
-    margin: 0 auto;
+.thumbnail {
     width: 100%;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
 }
 
-.goals .goals-container {
-    margin: 0 auto;
-    padding: 0 5px;
+.thumbnail:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.goals h2 {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #003366; /* Dark blue */
-    margin-bottom: 0;
-	margin-top: 70px;
-    text-transform: uppercase;
-}
 
-/* Goal Box Styling */
-.goals .goal {
-    background-color: #ffffff; /* White background for each goal */
-    padding: 15px;
-    margin: 5px 0;
-    border-radius: 10px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    text-align: left;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for scale and shadow */
-}
-
-/* Hover Effect for Goal Boxes */
-.goals .goal:hover {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
-    cursor: pointer; /* Change cursor to pointer */
-}
-
-/* Active (Click) Effect for Goal Boxes */
-.goals .goal:active {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Lighter shadow on click */
-}
-
-/* Heading for each goal */
-.goals h3 {
-    font-size: 1.2rem;
-    color: #003366; /* Dark blue for headings */
-    margin-bottom: 10px;
-    font-weight: 600;
-}
-
-/* Paragraph for goal descriptions */
-.goals p {
-    text-align: justify;
-    font-size: 1rem;
-    color: #444; /* Dark gray for text */
-    line-height: 1.2;
-    font-weight: 300;
-}
-
-/* Styling for NEMSU CARES Text (at the end) */
-.goals .goals-care-text {
-    text-align: left;
-    background-color: #ffffff;
-    padding: 40px;
-    margin-top: 40px;
-    border-radius: 10px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
-}
-
-/* Hover Effect for NEMSU CARES Text */
-.goals .goals-care-text:hover {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
-    cursor: pointer; /* Change cursor to pointer */
-}
-
-/* Active Effect for NEMSU CARES Text */
-.goals .goals-care-text:active {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Lighter shadow on click */
-}
-
-/* Proper spacing at the bottom for care-text */
-.goals .goals-care-text {
-    margin-bottom: 80px; /* Ensures there's space at the bottom of the last section */
-}
-
-/* Responsiveness for smaller screens */
 @media (max-width: 768px) {
-    .goals h2 {
-        font-size: 2.2rem;
+    .container {
+        flex-direction: column;
     }
-
-    .goals .goal {
-        padding: 20px;
+    
+    .image-gallery {
+        width: 100%;
+        order: 2;
     }
-
-    .goals p {
-        font-size: 1rem;
+    
+    .text-content {
+        width: 100%;
+        order: 1;
     }
 }
